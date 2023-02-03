@@ -26,11 +26,13 @@ $(document).ready(function () {
 
 
   var saveButton = $(".btn");
-  var input = $(".description").val();
+  var input = $(this)
+    .siblings('.description')
+    .val("");
 
   saveButton.click(function() {
 
-    localStorage.setItem("input", JSON.stringify(input));
+    localStorage.setItem("input", (input));
 
   })
 
