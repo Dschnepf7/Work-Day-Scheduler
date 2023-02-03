@@ -22,30 +22,16 @@
 // TODO: Add code to display the current date in the header of the page.
 // });
 var currentHour = dayjs().format();
-
 $(document).ready(function () {
 
 
-  var saveButton = $("btn");
-  var input = $("#time-block");
+  var saveButton = $(".btn");
+  var input = $(".description").val();
 
-  saveButton.on('click', function () {
+  saveButton.click(function() {
 
     localStorage.setItem("input", JSON.stringify(input));
+
   })
 
-  // localStorage.setItem("input", JSON.stringify(input));
-  // jQuery methods go here...
-
 });
-// var saveButton = $("btn");
-// var currentHour = dayjs().format();
-// // console.log(currentTime);
-// var input = $("#time-block");
-// // console.log(input);
-// saveButton.on('click',function () {
-
-//   localStorage.setItem("input", JSON.stringify(input));
-// })
-
-// // localStorage.setItem("input", JSON.stringify(input));
