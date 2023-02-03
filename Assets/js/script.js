@@ -38,11 +38,11 @@ $(document).ready(function () {
     // save in localStorage
     localStorage.setItem(key, value);
     localStorage.getItem(value);
-    
+
   });
 // function displayValue(){
 //   localStorage.getItem(value);
 //   $("#hour-10").append(value);
 // }
-
+document.querySelector('#display-10').value = localStorage.getItem(value);
 });
