@@ -25,15 +25,18 @@ var currentHour = dayjs().format();
 $(document).ready(function () {
 
 
-  var saveButton = $(".btn");
-  var input = $(this)
-    .siblings('.description')
-    .val("");
+  // var saveButton = $(".btn");
+  // // var input = $(this)
+  // //   .siblings('.description')
+  // //   .val("");
 
-  saveButton.click(function() {
-
-    localStorage.setItem("input", (input));
-
-  })
+  $('.saveBtn').on('click', function () {
+    // get nearby values
+    var value = $(this).siblings('.description').val();
+    var key = $(this).parent().attr('id');
+  
+    // save in localStorage
+    localStorage.setItem(key, value);
+  });
 
 });
