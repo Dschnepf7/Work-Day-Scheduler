@@ -44,5 +44,38 @@ $(document).ready(function () {
 //   localStorage.getItem(value);
 //   $("#hour-10").append(value);
 // }
-document.querySelector('#display-10').value = localStorage.getItem(value);
+document.querySelector('#display-9').value = localStorage.getItem("hour-9");
+document.querySelector('#display-10').value = localStorage.getItem("hour-10");
+document.querySelector('#display-11').value = localStorage.getItem("hour-11");
+document.querySelector('#display-12').value = localStorage.getItem("hour-12");
+document.querySelector('#display-1').value = localStorage.getItem("hour-1");
+document.querySelector('#display-2').value = localStorage.getItem("hour-2");
+document.querySelector('#display-3').value = localStorage.getItem("hour-3");
+document.querySelector('#display-4').value = localStorage.getItem("hour-4");
+document.querySelector('#display-5').value = localStorage.getItem("hour-5");
+
+var displayDate = dayjs().format('dddd, MMMM DD');
+$('#currentDay').text(displayDate);
 });
+
+//Conditional Statement??
+// if(timerValue > time-block){
+//   document.querySelector("#hour-10").classList.add(".past")
+//   document.querySelector("#hour-10").classList.remove(".present")
+// }
+
+// dayjs().hour() // gets current hour
+// newDate = dayjs().hour(12) // returns new dayjs object
+// console.log(newDate);
+
+let possibleTimes=[9, 10, 11, 12, 1, 2, 3, 4, 5]
+
+var currentHour = dayjs().get('hour');
+console.log(currentHour);
+
+if(currentHour > timeBlocks)
+
+var timeBlock9am = document.querySelector('#hour9');
+
+
+
