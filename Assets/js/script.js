@@ -73,9 +73,23 @@ let possibleTimes=[9, 10, 11, 12, 1, 2, 3, 4, 5]
 var currentHour = dayjs().get('hour');
 console.log(currentHour);
 
-if(currentHour > timeBlocks)
+// if(currentHour > timeBlocks)
 
-var timeBlock9am = document.querySelector('#hour9');
+// var timeBlock9am = document.querySelector('#hour9');
+
+var timeBlock = $(".time-block");
+for (let i = 0; i < timeBlock.length; i++) {
+  const element = timeBlock[i];
+  console.log(element);
+  let timeBlockHour = element.dataset.hour;
+  if(element.dataset.hour > currentHour){
+    $(element).children(".description").addClass("future");
+  } else if (element.dataset.hour < currentHour){
+    $(element).children(".description").addClass("past");
+  } else {$(element).children(".description").addClass("present");
+ 
+}
+}
 
 
 
