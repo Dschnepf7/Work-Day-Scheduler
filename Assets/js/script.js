@@ -44,6 +44,7 @@ $(document).ready(function () {
 //   localStorage.getItem(value);
 //   $("#hour-10").append(value);
 // }
+// Tried to change querySelector to $ for jquery here but would not work with local storage for some reason.
 document.querySelector('#display-9').value = localStorage.getItem("hour-9");
 document.querySelector('#display-10').value = localStorage.getItem("hour-10");
 document.querySelector('#display-11').value = localStorage.getItem("hour-11");
