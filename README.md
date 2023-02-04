@@ -1,5 +1,17 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
+## URL 
+
+https://dschnepf7.github.io/Work-Day-Scheduler/
+
+## Description
+
+This application is designed to organize the user's schedule through the use of timeslots. User is able to save events or notes in each time slot, leave the page, and return to see those same events. Based on the hour of the day, the schedule is color coded to inform the user if that event is coming up, in the past, or current. Red represents current time, green is the future, and gray is the past. 
+
+## Resources
+
+Study Groups, askBCS, as well as tutor time were used to supplement the design process of this application. 
+
 ## Your Task
 
 Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
